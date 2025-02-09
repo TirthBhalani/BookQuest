@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="search-input"
+          style="color: EFEEE5"
+        />
+        <span><i class="fas fa-search search-icon"></i></span>
+      </div>
+    <div class="searchfilter-con">
+      <div  class="shuffleFilter-con"></div>
+    </div>
+
+    
+    <div class="filter-modal" style="display: none">
+      <div class="filter-modal-content">
+        <span class="close-filter">&times;</span>
+        <h2>Filter by Genres</h2>
+        <div class="genre-checkboxes">
+          <div class="genre-checkbox">
+            <input type="checkbox" id="horror" value="Horror" />
+            <label for="horror">Horror</label>
+          </div>
+          <div class="genre-checkbox">
+            <input type="checkbox" id="crime" value="Crime" />
+            <label for="crime">Crime</label>
+          </div>
+          <div class="genre-checkbox">
+            <input type="checkbox" id="fantasy" value="Fantasy" />
+            <label for="fantasy">Fantasy</label>
+          </div>
+
+          <div class="genre-checkbox">
+            <input type="checkbox" id="dark" value="Dark" />
+            <label for="dark">Dark</label>
+          </div>
+          <div class="genre-checkbox">
+            <input type="checkbox" id="manga" value="Manga" />
+            <label for="manga">Manga</label>
+          </div>
+          <div class="genre-checkbox">
+            <input type="checkbox" id="romance" value="Romance" />
+            <label for="romance">Romance</label>
+          </div>
+          
+         
+          <div class="genre-checkbox">
+            <input type="checkbox" id="Fiction" value="Fiction" />
+            <label for="Fiction">Fiction</label>
+          </div>
+          <div class="genre-checkbox">
+            <input type="checkbox" id="Mystery" value="Mystery" />
+            <label for="Mystery">Mystery</label>
+          </div>
+          <div class="genre-checkbox">
+            <input type="checkbox" id="Thriller" value="Thriller" />
+            <label for="Thriller">Thriller</label>
+          </div>
+          <div class="genre-checkbox">
+            <input type="checkbox" id="Business" value="Business" />
+            <label for="Business">Business</label>
+          </div>
+          <div class="genre-checkbox">
+            <input type="checkbox" id="Travel" value="Travel" />
+            <label for="Travel">Travel</label>
+          </div>
+          <div class="genre-checkbox">
+            <input type="checkbox" id="Art" value="Art" />
+            <label for="Art">Art</label>
+          </div>
+          <div class="genre-checkbox">
+            <input type="checkbox" id="Science" value="Science" />
+            <label for="Science">Science</label>
+          </div>
+          <div class="genre-checkbox">
+            <input type="checkbox" id="Technology" value="Technology" />
+            <label for="Technology">Technology</label>
+          </div>
+          <div class="genre-checkbox">
+            <input type="checkbox" id="Poetry" value="Poetry" />
+            <label for="Poetry">Poetry</label>
+          </div>
+          <div class="genre-checkbox">
+            <input type="checkbox" id="Philosophy" value="Philosophy" />
+            <label for="Philosophy">Philosophy</label>
+          </div>
+        </div>
+        <button class="filter-books-btn">Filter Books</button>
+      </div>
+    </div>
+
+    <div id="recommended-books"></div>
+
+    <script src="navbar.js" defer></script>
+    <script src="search.js"></script>
+  </body>
+</html>

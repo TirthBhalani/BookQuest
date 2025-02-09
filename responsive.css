@@ -1,0 +1,369 @@
+
+@media screen and (max-width: 1200px) {
+    .library-container {
+        padding: 0 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .modal-content {
+        width: 85%;
+        min-width: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links li a {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .search-container {
+        width: 90%;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .modal-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-body img {
+        width: 150px;
+    }
+
+    .book-details {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .home-icon {
+        margin-bottom: 10px;
+    }
+
+    .home-icon a {
+        margin-right: 0;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .library-modal, .info-modal {
+        width: 90%;
+        min-width: auto;
+    }
+
+    .genre-checkboxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filter-modal-content {
+        min-width: auto;
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-links li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .search-container {
+        width: 95%;
+    }
+
+    .search-input {
+        padding: 10px 40px 10px 10px;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .book-card {
+        max-width: 100%;
+    }
+
+    .modal-content {
+        padding: 15px;
+    }
+
+    .genre-checkboxes {
+        grid-template-columns: 1fr;
+    }
+
+    .library-selection {
+        width: 100%;
+    }
+
+    .section-dropdown,
+    .add-to-library {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .book-thumbnail-placeholder {
+        width: 140px;
+        height: 220px;
+    }
+
+    .info-modal .modal-thumbnail,
+    .info-modal .book-thumbnail-placeholder {
+        width: 120px;
+        height: 180px;
+    }
+
+    .book-details h2 {
+        font-size: 20px;
+    }
+
+    .book-details p {
+        font-size: 14px;
+    }
+
+    .success-message {
+        width: 90%;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (hover: none) {
+    .card:hover,
+    .book-card:hover,
+    .nav-links li a:hover {
+        transform: none;
+    }
+
+    .add-to-library,
+    .filter-books-btn,
+    .read-more {
+        padding: 12px 20px;
+    }
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .book-card img,
+    .modal-body img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .modal-content {
+        max-height: 85vh;
+    }
+
+    .book-modal .modal-body {
+        max-height: 70vh;
+    }
+
+    .navbar {
+        padding: 5px;
+    }
+}
+
+
+@media print {
+    .navbar,
+    .search-container,
+    .add-more-books,
+    .filter-container {
+        display: none;
+    }
+
+    .book-grid {
+        display: block;
+    }
+
+    .book-card {
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+body {
+    background-image: linear-gradient(90deg, #040049 0%, #090979 15%, #00d4ff 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+
+.search-container {
+    position: relative;
+    top: 20px;
+    z-index: 999;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+.search-input {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .library-container {
+        padding: 0 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .modal-content {
+        width: 85%;
+        min-width: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .search-container {
+        width: 90%;
+        top: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links li a {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-top: 80px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search-container {
+        width: 85%;
+        top: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .home-icon {
+        margin-bottom: 10px;
+    }
+
+    .home-icon a {
+        margin-right: 0;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .search-container {
+        width: 90%;
+        top: 5px;
+        padding: 0 10px;
+    }
+
+    .search-input {
+        padding: 10px 40px 10px 10px;
+        font-size: 14px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-links li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+        margin-top: 60px;
+    }
+}
+
+
+.searchfilter-con {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.shuffleFilter-con {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+

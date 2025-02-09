@@ -1,0 +1,15 @@
+# Ignore node_modules and dependencies
+node_modules/
+package-lock.json
+
+# Ignore build and deployment files
+dist/
+.cache/
+
+# Ignore environment variables and system files
+.env
+.DS_Store
+Thumbs.db
+
+# Ignore GitHub Pages build files
+.gh-pages/
